@@ -1,4 +1,4 @@
-## This script is the programming assignment for the get-data-01 
+## This script is the programming assignment for the get-data-014 
 ## Getting & Cleaning Data course.
 ## PURPOSE: This script merges the training and test sets to create one 
 ## data set. It then extracts only the measurements on the mean and 
@@ -115,8 +115,9 @@ dataTotal$activity <- gsub("6", "lying", dataTotal$activity, fixed=TRUE)
 ## Write the tidy data set to file. Note: Selected text file export since all 
 ## the other files in this assignment were text.
 write.table(dataTidy, file="tidy-data.txt", row.name=FALSE)
+print("done executing run_analysis.R")
 
 
 ## for testing - 
-print(head(dataTidy, n=20))
-print(tail(dataTidy, n=20))
+## print(head(dataTidy, n=20))
+## print(tail(dataTidy, n=20))
